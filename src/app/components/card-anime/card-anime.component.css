@@ -1,0 +1,41 @@
+.image-container {
+    display: inline-block;
+    margin: 5px;
+    max-width: 300px; /* Defina a largura máxima do container */
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+  }
+  
+  .image-wrapper {
+    display: grid;
+    grid-template-rows: auto auto; /* Crie duas linhas, uma para a imagem e outra para o texto */
+    align-items: center; /* Centralize o conteúdo verticalmente */
+    gap: 5px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    max-width: 100%; /* A imagem e o texto se ajustarão à largura máxima da div */
+  }
+  
+  .image-wrapper img {
+    max-width: 100%; /* A imagem se ajustará à largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .centered-text {
+    max-width: 100%; /* Define a largura máxima para o texto */
+    word-wrap: break-word; /* Permite que o texto quebre quando ultrapassar a largura máxima */
+    white-space: nowrap; /* Evita quebras de linha */
+    font-size: 16px; /* Define o tamanho da fonte (ajuste conforme necessário) */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a largura máxima */
+    position: relative; /* Permite a posição relativa para o pseudo-elemento */
+  }
+  
+  .centered-text::after {
+    content: '...'; /* Adiciona três pontos de suspensão */
+    position: absolute; /* Define a posição absoluta para os pontos de suspensão */
+    bottom: 0; /* Alinha os pontos de suspensão na parte inferior do elemento */
+    right: 0; /* Alinha os pontos de suspensão à direita do elemento */
+    background: white; /* Define um fundo branco para cobrir o texto quebrado */
+  }
+  
+  
+  
+  
+  
