@@ -1,8 +1,10 @@
-<a href="google.com">
+<a (click)="openModal(animes)">
     <div class="image-container">
         <div class="image-wrapper">
-        <img src="{{animes.imageURL}}" alt="Imagem do anime">
+            <img src="{{animes.imageURL}}" alt="Imagem do anime">
         </div>
-        <p class="centered-text"><strong>{{animes.name}}</strong></p>
+        <div>
+            <p class="centered-text"><strong>{{animes.name}}</strong></p>
+        </div>
     </div>
 </a>

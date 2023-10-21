@@ -20,7 +20,11 @@ export class AnimeService {
         return data.data.map((item: any) => {
           const anime: AnimeData = {
             name: item.attributes.canonicalTitle,
-            imageURL: item.attributes.posterImage.small
+            imageURL: item.attributes.posterImage.small,
+            self: item.links.self,
+            description: item.attributes.description,
+            averageRating: item.attributes.averageRating,
+            endDate: item.attributes.endDate
           };
           return anime;
         });

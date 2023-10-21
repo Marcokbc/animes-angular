@@ -8,21 +8,28 @@ import { AppComponent } from './app.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
 import { CardAnimeComponent } from './components/card-anime/card-anime.component';
 import { AnimeListComponent } from './components/anime-list/anime-list.component';
+import { ModalAnimeComponent } from './components/modal-anime/modal-anime.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchInputComponent,
     CardAnimeComponent,
-    AnimeListComponent
+    AnimeListComponent,
+    ModalAnimeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MatDialog,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
