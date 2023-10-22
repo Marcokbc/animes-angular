@@ -9,8 +9,7 @@ import { SearchInputComponent } from './components/search-input/search-input.com
 import { CardAnimeComponent } from './components/card-anime/card-anime.component';
 import { AnimeListComponent } from './components/anime-list/anime-list.component';
 import { ModalAnimeComponent } from './components/modal-anime/modal-anime.component';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatDialog } from '@angular/material/dialog';
+import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -29,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDialogModule,
     BrowserAnimationsModule
   ],
-  providers: [MatDialog,],
-  bootstrap: [AppComponent]
+  providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
+  bootstrap: [AppComponent],
+  entryComponents: [ModalAnimeComponent]
 })
 export class AppModule { }

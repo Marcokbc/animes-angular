@@ -1,4 +1,4 @@
-<a (click)="openModal(animes)">
+<button class="button" mat-raised-button (click)="openDialog(animes)">
     <div class="image-container">
         <div class="image-wrapper">
             <img src="{{animes.imageURL}}" alt="Imagem do anime">
@@ -7,4 +7,4 @@
             <p class="centered-text"><strong>{{animes.name}}</strong></p>
         </div>
     </div>
-</a>
+</button>

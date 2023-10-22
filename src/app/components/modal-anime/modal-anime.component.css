@@ -1,0 +1,57 @@
+/* Estilo do conteúdo do modal */
+.modal-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /* Estilo da imagem */
+  .modal-image {
+    margin-right: 20px;
+  }
+  
+  /* Estilo dos detalhes à direita da imagem */
+  .modal-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo do título */
+  .modal-details h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo da descrição */
+  .modal-details p {
+    font-size: 1rem;
+  }
+  
+  /* Estilo da classificação */
+  .modal-details p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  
+  /* Estilo da data de encerramento */
+  .modal-details p:nth-of-type(3) {
+    font-size: 1rem;
+  }
+  
+  /* Estilo do botão no canto superior direito */
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 10px; /* Espaçamento superior */
+  }
+
+  .modal-actions button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .custom-modal-content {
+    z-index: 1000; /* Coloca o modal à frente de outros conteúdos */
+  
+    /* Ajusta o posicionamento vertical para o centro */
+    top: 50%;
+  }

@@ -1,6 +1,14 @@
-<div class="modal">
-    <div class="modal-content">
-        <h2>{{ data.name }}</h2>
-        <img [src]="data.imageURL" alt="Imagem do anime">
-    </div>
+<div mat-dialog-content class="custom-modal-content">
+<div mat-dialog-actions class="modal-actions">
+  <button mat-button (click)="close()">X</button>
+</div>
+<div mat-dialog-content class="modal-content">
+  <img src="{{data.imageURL}}" alt="Imagem do anime" class="modal-image">
+  <div class="modal-details">
+    <h1><strong>{{data.name}}</strong></h1>
+    <p>{{data.description}}</p>
+    <p><strong>Score: {{data.averageRating}}</strong></p>
+    <p>Data de encerramento: {{data.endDate}}</p>
   </div>
+</div>
+</div>
