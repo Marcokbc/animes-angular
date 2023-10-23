@@ -25,6 +25,7 @@
   /* Estilo da descrição */
   .modal-details p {
     font-size: 0.9rem;
+    text-align: justify;
   }
   
   /* Estilo da classificação */
@@ -55,3 +56,23 @@
     width: 1000px;
     overflow: hidden;
   }
+
+  @media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column; /* Empilhe os elementos verticalmente */
+    }
+
+    .modal-image {
+        margin-right: 0; /* Remova a margem para a imagem */
+        width: 100%;
+    }
+
+    .custom-modal-content {
+        max-width: 300px; /* Defina uma largura máxima para o modal */
+    }
+}
+
+
+
+
+
