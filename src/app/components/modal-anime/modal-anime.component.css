@@ -7,6 +7,7 @@
   /* Estilo da imagem */
   .modal-image {
     margin-right: 20px;
+    height: 300px;
   }
   
   /* Estilo dos detalhes à direita da imagem */
@@ -23,7 +24,7 @@
   
   /* Estilo da descrição */
   .modal-details p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   /* Estilo da classificação */
@@ -47,11 +48,10 @@
   .modal-actions button {
     border: none;
     cursor: pointer;
+    background-color: white;
   }
 
   .custom-modal-content {
-    z-index: 1000; /* Coloca o modal à frente de outros conteúdos */
-  
-    /* Ajusta o posicionamento vertical para o centro */
-    top: 50%;
+    width: 1000px;
+    overflow: hidden;
   }

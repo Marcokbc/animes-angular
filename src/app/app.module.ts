@@ -29,7 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
-  bootstrap: [AppComponent],
-  entryComponents: [ModalAnimeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

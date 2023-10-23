@@ -22,12 +22,9 @@ export class CardAnimeComponent implements OnInit {
   }
 
   openDialog(anime: AnimeData) {
-    const dialogConfig = new MatDialogConfig();
-
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-
     let dialogRef = this.dialog.open(ModalAnimeComponent, {
+      autoFocus: true,
+      hasBackdrop: true,
       data: anime
     });
 

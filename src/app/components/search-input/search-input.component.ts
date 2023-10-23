@@ -4,7 +4,7 @@ import { AnimeService } from 'src/app/services/anime.service';
 
 @Component({
   selector: 'search-input',
-  template: '<input id="search-input" type="text" [(ngModel)]="animeSearch" (input)="onInputChange()" placeholder="Digite um anime..."/>',
+  template: '<input id="search-input" type="text" [(ngModel)]="animeSearch" (input)="onInputChange()" placeholder="Type an anime..."/>',
   styleUrls: ['./search-input.component.css']
 })
 export class SearchInputComponent implements OnInit {
